@@ -18,13 +18,12 @@ function Data = ncvarsget(file, varargin)
 %           The two functions use different conventions for dimensions. If
 %           not included, true is assumed.
 %         
-%
 % Output variables:
 %
 %   Data:   1 x 1 structure, with fieldnames corresponding to requested
 %           variables, each holding the data value for that variable
 
-% Copyright 2009-2013 Kelly Kearney
+% Copyright 2009-2015 Kelly Kearney
 
 varnames = varargin;
 isflag = cellfun(@(x) islogical(x) && isscalar(x), varnames);
